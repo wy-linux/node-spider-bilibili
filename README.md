@@ -1,12 +1,19 @@
-### 爬取哔哩哔哩视频的node.js项目
+### 爬取[哔哩哔哩视频](https://www.bilibili.com/)的node.js项目
+```shell
 1. npm install  下载相关依赖
-2. node download-bilibili.js  进行爬取视频  需传入PC端网页版哔哩哔哩 对应的视频链接
-
-##### resolveBilibili(url, name, dir) 解析bilibili首页源码，获取对应的音频/视频爬取链接，共有三个参数：
-1. url 必传，要爬取视频的链接，从网页版bilibili的浏览器地址栏里复制
-2. name 可以不传，要爬取视频的名称，默认自动解析为视频原本的名称
-3. dir 可以不传，爬取视频的存放目录，默认为当期目录的video文件夹
-
+2. node download-bilibili.js  进行爬取视频，需传入PC端网页版哔哩哔哩对应的视频链接
+3. 哔哩哔哩视频：https://www.bilibili.com/
+```
+```javascript
+/**
+ * 
+ * @param {*} url必传：要爬取视频的链接，从网页版bilibili的浏览器地址栏里复制
+ * @param {*} name可以不传：要爬取视频的名称，默认自动解析为视频原本的名称 
+ * @param {*} dir可以不传：爬取视频的存放目录，默认为当期目录的video文件夹
+ * @returns 
+ */
+async function resolveBilibili(url, name, dir)
+```
 ### 项目结构
 1. bin 目录下为核心库，封装了整个爬虫的核心请求逻辑
 2. download-bilibili.js 项目入口文件，启动整个爬虫程序
