@@ -24,4 +24,6 @@ async function resolveBilibili(url, name, dir)
 2. video 存放了使用ffmpeg对临时文件夹_video中的音频/视频合成后生成的目标视频文件
 
 ### 相关依赖
-使用本爬虫需要流媒体处理工具ffmpeg, 否则无法将音频/视频进行合成
+使用本爬虫需要流媒体处理工具ffmpeg，否则无法将音频/视频进行合成
+> 新版node-wangyu-BiliDown，使用B站解析url直接爬取MP4源文件，无需ffmpeg合成音视频。见：
+https://github.com/wy-linux/node-wangyu-bilidown
